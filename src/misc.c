@@ -6,7 +6,7 @@
 /*   By: avallete <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/12 11:46:41 by avallete          #+#    #+#             */
-/*   Updated: 2015/03/18 16:44:24 by avallete         ###   ########.fr       */
+/*   Updated: 2015/03/18 17:25:44 by avallete         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,15 +53,15 @@ void	spec_case(t_ps *stack)
 		{
 			rrs(stack, 0), ft_putchar(' ');
 			if (!(is_sort(stack->a, stack->topa)))
-			rrs(stack, 0), ft_putchar(' ');
+				rrs(stack, 0), ft_putchar(' ');
 			if (!(is_sort(stack->a, stack->topa)))
-			sw(stack, 0), ft_putchar(' ');
+				sw(stack, 0), ft_putchar(' ');
 			if (!(is_sort(stack->a, stack->topa)))
-			rs(stack, 0), ft_putchar(' ');
+				rs(stack, 0), ft_putchar(' ');
 			if (!(is_sort(stack->a, stack->topa)))
-			rs(stack, 0);
-		if (!(is_sort(stack->a, stack->topa)))
-			ft_putchar(' ');
+				rs(stack, 0);
+			if (!(is_sort(stack->a, stack->topa)))
+				ft_putchar(' ');
 		}
 	}
 }
