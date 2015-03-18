@@ -6,7 +6,7 @@
 /*   By: avallete <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/12 11:46:41 by avallete          #+#    #+#             */
-/*   Updated: 2015/02/12 13:50:15 by avallete         ###   ########.fr       */
+/*   Updated: 2015/03/18 16:02:23 by avallete         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,4 +43,25 @@ void	print_debug(t_ps *stack)
 	while (e <= stack->topb)
 		ft_printf("\033[0;36m %d \033[0m", stack->b[e++]);
 	ft_putstr("\n\n");
+}
+
+void	spec_case(t_ps *stack)
+{
+	if (!(is_sort(stack->a, stack->topa)))
+	{
+		if (stack->a[0] < stack->a[1])
+		{
+			rrs(stack, 0);
+			ft_putchar(' ');
+			rrs(stack, 0);
+			ft_putchar(' ');
+			sw(stack, 0);
+			ft_putchar(' ');
+			rs(stack, 0);
+			ft_putchar(' ');
+			rs(stack, 0);
+		if (!(is_sort(stack->a, stack->topa)))
+			ft_putchar(' ');
+		}
+	}
 }

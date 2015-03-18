@@ -6,7 +6,7 @@
 /*   By: avallete <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/12 11:48:50 by avallete          #+#    #+#             */
-/*   Updated: 2015/02/12 13:28:19 by avallete         ###   ########.fr       */
+/*   Updated: 2015/03/18 16:10:35 by avallete         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,7 @@ int		get_dist(int nb, int *a, int max)
 	return (0);
 }
 
+
 void	push_min(t_ps *stack)
 {
 	int	min;
@@ -75,6 +76,8 @@ void	resolve_stack(t_ps *stack)
 	int	flags;
 
 	flags = 1;
+
+	spec_case(stack);
 	while (flags)
 	{
 		if (!(is_sort(stack->a, stack->topa)))
