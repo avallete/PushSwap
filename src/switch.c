@@ -6,7 +6,7 @@
 /*   By: avallete <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/12 11:40:18 by avallete          #+#    #+#             */
-/*   Updated: 2015/02/12 11:40:57 by avallete         ###   ########.fr       */
+/*   Updated: 2015/03/25 15:02:49 by avallete         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void	sw(t_ps *stack, int mode)
 		ft_putstr("sb"), switch_stack(stack->b, stack->topb);
 	else
 		ft_putstr("sa"), switch_stack(stack->a, stack->topa);
-	stack->debug ? print_debug(stack) : (mode = mode);
+	stack->debug ? print_debug(stack) : (void)mode;
 }
 
 void	ft_switch(void *s, void *d)

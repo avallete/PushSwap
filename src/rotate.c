@@ -6,7 +6,7 @@
 /*   By: avallete <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/12 11:38:19 by avallete          #+#    #+#             */
-/*   Updated: 2015/02/12 12:03:45 by avallete         ###   ########.fr       */
+/*   Updated: 2015/03/25 15:03:17 by avallete         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ void	rrs(t_ps *stack, int mode)
 		ft_putstr("rrb"), rrotate_stack(stack->b, stack->topb);
 	else
 		ft_putstr("rra"), rrotate_stack(stack->a, stack->topa);
-	stack->debug ? print_debug(stack) : (mode = mode);
+	stack->debug ? print_debug(stack) : (void)mode;
 }
 
 void	rs(t_ps *stack, int mode)
@@ -79,5 +79,5 @@ void	rs(t_ps *stack, int mode)
 		ft_putstr("rb"), rotate_stack(stack->b, stack->topb);
 	else
 		ft_putstr("ra"), rotate_stack(stack->a, stack->topa);
-	stack->debug ? print_debug(stack) : (mode = mode);
+	stack->debug ? print_debug(stack) : (void)mode;
 }

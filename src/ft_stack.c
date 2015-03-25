@@ -6,7 +6,7 @@
 /*   By: avallete <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/07 16:52:54 by avallete          #+#    #+#             */
-/*   Updated: 2015/02/12 12:23:41 by avallete         ###   ########.fr       */
+/*   Updated: 2015/03/25 15:01:49 by avallete         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,5 +35,5 @@ void	push_stack(t_ps *stack, int mode)
 		*top += 1;
 		dst[*top] = tmp;
 	}
-	stack->debug ? print_debug(stack) : (mode = mode);
+	stack->debug ? print_debug(stack) : (void)mode;
 }
