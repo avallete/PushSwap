@@ -6,7 +6,7 @@
 /*   By: avallete <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 14:41:54 by avallete          #+#    #+#             */
-/*   Updated: 2015/02/07 16:44:10 by avallete         ###   ########.fr       */
+/*   Updated: 2015/06/04 14:10:47 by avallete         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ typedef struct		s_tree
 t_tree				*ft_treenew(void *content, size_t content_size);
 void				ft_nodeaddleft(t_tree *new, t_tree **tree);
 void				ft_nodeaddright(t_tree *new, t_tree **tree);
-int					ft_atoi(const char *str);
+long int			ft_atoi(const char *str);
 void				ft_bzero(void *s, size_t n);
 int					ft_tolower(int c);
 int					ft_isalnum(int c);
